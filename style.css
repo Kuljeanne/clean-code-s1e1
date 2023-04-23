@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.header .more_inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -28,7 +28,7 @@ body {
 
 }
 
-.tasks-list-wrapper {
+.wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -161,11 +161,11 @@ body {
   display: none;
 }
 
-.tasks-list .tasks-list__item.editMode .task-editing {
+.tasks-list .tasks-list__item.tasks-list__item_activ .task-editing {
   display: inline-block;
   width: 224px;
 }
 
-.tasks-list .tasks-list__item.editMode .task-name {
+.tasks-list .tasks-list__item.tasks-list__item_activ .task-name {
   display: none;
 }

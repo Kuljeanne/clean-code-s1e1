@@ -79,7 +79,6 @@ var editTask = function () {
 
 
 var deleteTask = function () {
-  console.log("Delete Task...");
   var listItem = this.parentNode;
   var ul = listItem.parentNode;
   ul.removeChild(listItem);
@@ -88,7 +87,6 @@ var deleteTask = function () {
 
 
 var taskCompleted = function () {
-  console.log("Complete Task...");
   var listItem = this.parentNode;
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
@@ -105,7 +103,6 @@ var taskIncomplete = function () {
 addButton.addEventListener("click", addTask);
 
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
-  console.log("bind list item events");
   var checkBox = taskListItem.querySelector(".task-check");
   var editButton = taskListItem.querySelector(".btn-edit");
   var deleteButton = taskListItem.querySelector(".btn-delete");
